@@ -1,5 +1,4 @@
 .App {
-  background-color: #282c34;
   color: #61dafb;
 
 }
@@ -33,5 +32,16 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .links {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fab {
+  font-size: 3rem !important;
+}
+
+.list {
+  font-size: 5em !important;
+  display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }

@@ -6,7 +6,7 @@ class Home extends Component {
       <div className='home'>
         <div className="jumbotron">
         <h1 className="display-1">Hello, world!</h1>
-        <h5 lassName="display-4" style={{color: 'white'}}>I am Ashish, I am a javaScript developer.</h5>
+        <h5  style={{color: 'white'}}>I am Ashish, I am a javaScript developer.</h5>
         </div>
       </div>
     );
