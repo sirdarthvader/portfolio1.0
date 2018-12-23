@@ -76,7 +76,7 @@ class Projects extends Component {
             </a>
           </div>
         </div>
-        {/* <div className="card mb-4">
+        <div className="card mb-4">
           <h5 className="card-header">FaceRecognition Webapp</h5>
           <div className="card-body">
             <h5 className="card-title">
@@ -99,7 +99,7 @@ class Projects extends Component {
               See Source Code
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
