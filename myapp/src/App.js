@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
 import Home from "./Components/Pages/Home";
 import Projects from "./Components/Pages/Projects";
+import Blog from './Components/Pages/Blog';
 
 const particleOptions = {
   particles: {
@@ -29,6 +30,7 @@ class App extends Component {
             <Navigation />
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
+            <Route exact path="/blog" component={Blog} />
           </div>
         </div>
       </Router>
