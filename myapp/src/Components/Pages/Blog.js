@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import cover from "./cover.jpg";
+import canvas from './canvas.jpeg';
+import dom from './dom.jpeg';
+import github from './github.jpg';
+import reactFir from './reactFir.jpeg';
+import reactHer from './reactHer.jpeg';
 
 class Blog extends Component {
   
@@ -13,11 +18,11 @@ class Blog extends Component {
       <div className="blog">
         <div className="card-deck mb-3">
           <div className="card">
-            <img className="card-img-top" src={cover} alt="Card" />
+            <img className="card-img-top" src={reactFir} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">React and Firebase are all you need to host your web apps</h5>
               <p className="card-text">
-                Highlights the pprocess of creating a basic react application and deploying it to the firbase hosting platform. 
+                Highlights the process of creating a basic react application and deploying it to the firbase hosting platform. 
               </p>
             </div>
             <div className="card-footer">
@@ -25,7 +30,7 @@ class Blog extends Component {
             </div>
           </div>
           <div className="card">
-            <img className="card-img-top" src={cover} alt="Card" />
+            <img className="card-img-top" src={canvas} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">Canvas element and JavaScript</h5>
               <p className="card-text">
@@ -38,29 +43,26 @@ class Blog extends Component {
           </div>
 
           <div className="card">
-            <img className="card-img-top" src={cover} alt="Card" />
+            <img className="card-img-top" src={github} alt="Card" />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Git, Github and Version Control</h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                You may have used for a long time now, but you may still have some issue's with some of the commands.
+                A thorugh read should clear any confusions around Git and version control.
               </p>
             </div>
             <div className="card-footer">
-            <small className="text-muted"><a href={domJS} target="_blank" rel='noopener noreferrer' className="btn btn-dark">Read More</a></small>
+            <small className="text-muted"><a href={gitHub} target="_blank" rel='noopener noreferrer' className="btn btn-dark">Read More</a></small>
             </div>
           </div>
           </div>
           <div className='card-deck mb-3'>
           <div className="card">
-            <img className="card-img-top" src={cover} alt="Card" />
+            <img className="card-img-top" src={reactHer} alt="Card" />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">React and Firebase are all you need to host your web apps</h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                Highlights the process of creating a basic react application served from a Node/express server and deploying it to the Heroku hosting platform. 
               </p>
             </div>
             <div className="card-footer">
@@ -69,17 +71,15 @@ class Blog extends Component {
           </div>
          
           <div className="card">
-            <img className="card-img-top" src={cover} alt="Card" />
+            <img className="card-img-top" src={dom} alt="Card" />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Color game suing javaScript</h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                This is more of a tutorial on how to create a simple color guessing game using vanilla javaScript and no frmaworks or library whatsoever. Quite a simple game but uses some very important and basic javaScript elements.
               </p>
             </div>
             <div className="card-footer">
-            <small className="text-muted"><a href={gitHub} target="_blank" rel='noopener noreferrer' className="btn btn-dark">Read More</a></small>
+            <small className="text-muted"><a href={domJS} target="_blank" rel='noopener noreferrer' className="btn btn-dark">Read More</a></small>
             </div>
           </div>
         </div>
