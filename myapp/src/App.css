@@ -40,8 +40,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
 .list {
-  font-size: 5em !important;
+  font-size: 10em !important;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.skills {
+  background-color: rgba(256, 256, 256, 0.1);
 }
