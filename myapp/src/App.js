@@ -6,6 +6,8 @@ import Navigation from "./Components/Navigation/Navigation";
 import Home from "./Components/Pages/Home";
 import Projects from "./Components/Pages/Projects";
 import Blog from './Components/Pages/Blog';
+import Skills from './Components/Pages/Skills';
+import Contact from './Components/Pages/Contact';
 
 const particleOptions = {
   particles: {
@@ -26,11 +28,12 @@ class App extends Component {
         <div className="container">
           <div className="App">
             <Particles className="background" params={particleOptions} />
-
             <Navigation />
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/blog" component={Blog} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/contact" component={Contact} />
           </div>
         </div>
       </Router>

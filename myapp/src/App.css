@@ -29,3 +29,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .card-text {
   color: #fff;
 }
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
