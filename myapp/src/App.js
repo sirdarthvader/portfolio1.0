@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Particles} from "react-particles-js";
 import './App.css';
-import Navigation from './Components/Navigation';
+import Navigation from './Components/Navigation/Navigation';
 const particleOptions = {
   particles: {
     number: {
@@ -17,7 +17,7 @@ const particleOptions = {
 class App extends Component {
   render() {
     return (
-      <div className='app'>
+      <div className='App'>
         <Particles
           className='background'
           params={particleOptions}

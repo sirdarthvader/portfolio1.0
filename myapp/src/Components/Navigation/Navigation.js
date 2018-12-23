@@ -4,7 +4,7 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <h1 style={{color: 'white'}}>This is the navigation bar</h1>
+        <h1>This is the navigation bar</h1>
       </div>
     )
   }
