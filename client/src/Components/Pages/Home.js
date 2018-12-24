@@ -8,10 +8,17 @@ class Home extends Component {
         <div className="jumbotron">
           <h1 className="display-1">Hello, world!</h1>
           <h5 style={{ color: "white" }}>
-            I am Ashish, I am a javaScript developer.
+            I am Ashish and I am a javaScript developer.
           </h5>
+          <span>I am currently working with:</span>
           <Typing>
-            <span>This span will get typed.</span>
+            <br />
+            <ul>
+              <li>React</li>
+              <li>Node JS</li>
+              <li>JavaScript</li>
+              <li>ExpressJS</li>
+            </ul>
           </Typing>
         </div>
       </div>

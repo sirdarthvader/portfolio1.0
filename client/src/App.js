@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
 import Home from "./Components/Pages/Home";
 import Projects from "./Components/Pages/Projects";
-import Blog from './Components/Pages/Blog';
-import Skills from './Components/Pages/Skills';
-import Contact from './Components/Pages/Contact';
+import Blog from "./Components/Pages/Blog";
+import Skills from "./Components/Pages/Skills";
+import Contact from "./Components/Pages/Contact";
 
 const particleOptions = {
   particles: {
@@ -16,6 +16,19 @@ const particleOptions = {
       density: {
         enable: true,
         value_area: 800,
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onclick: {
+            enable: true,
+            mode: "push",
+          },
+        },
       },
     },
   },
