@@ -10,7 +10,7 @@ class Home extends Component {
           <h5 style={{ color: "white" }}>
             I am Ashish and I am a javaScript developer.
           </h5>
-          <span>I am currently working with:</span>
+          <span>I am currently working on:</span>
           <Typing>
             <br />
             <ul>
