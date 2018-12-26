@@ -19,8 +19,8 @@ class Blog extends Component {
       "https://codeburst.io/git-version-control-system-github-54f4c2755372";
     return (
       <div className="blog">
-        <div className="card-deck mb-3">
-          <div className="card">
+        <div className="card-deck mb-3 ">
+          <div className="card article">
             <img className="card-img-top" src={reactFir} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">
@@ -44,7 +44,7 @@ class Blog extends Component {
               </small>
             </div>
           </div>
-          <div className="card">
+          <div className="card article">
             <img className="card-img-top" src={canvas} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">Canvas element and JavaScript</h5>
@@ -68,7 +68,7 @@ class Blog extends Component {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card article">
             <img className="card-img-top" src={github} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">Git, Github and Version Control</h5>
@@ -92,7 +92,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="card-deck mb-3">
-          <div className="card">
+          <div className="card article">
             <img className="card-img-top" src={reactHer} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">
@@ -118,7 +118,7 @@ class Blog extends Component {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card article">
             <img className="card-img-top" src={dom} alt="Card" />
             <div className="card-body">
               <h5 className="card-title">Color game using javaScript</h5>

@@ -49,3 +49,18 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .skills {
   background-color: rgba(256, 256, 256, 0.1);
 }
+
+.project:hover {
+  transform: scale(1.03);
+  transition: ease-in-out;
+}
+
+.article:hover {
+  transform: scale(1.03);
+  transition: ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.03);
+  transition: ease-in-out;
+}
