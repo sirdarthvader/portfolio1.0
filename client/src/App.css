@@ -66,15 +66,15 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
 .feedBox {
-  padding: 2em;
+  padding: 1em 10em;
 }
 @media only screen and (max-width: 560px) {
   .feedBox {
     padding:  0;
   }
   .box {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
   }
 }
 
