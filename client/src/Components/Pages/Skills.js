@@ -12,7 +12,7 @@ class Skills extends Component {
             <i className="devicon-nodejs-plain-wordmark colored" />
           </div>
           <div className='skill'>
-          <i class="devicon-express-original-wordmark" />
+          <i className="devicon-express-original-wordmark" />
 
           </div>
           <div className='skill'>

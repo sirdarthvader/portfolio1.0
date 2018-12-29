@@ -5,17 +5,22 @@ class TwitterFeed extends Component {
   render () {
     return (
       <div>
-        <Timeline
-          dataSource={{
-            sourceType: 'profile',
-            screenName: 'ashishnandansin'
-          }}
-          options={{
-            username: 'ashishnandnasin',
-            height: '400'
-          }}
-          onLoad={() => console.log('Timeline is loaded!')}
-        />
+        <div className='container mb-4'>
+          <div className='feedBox'>
+            <Timeline
+              className='mt-4'
+              dataSource={{
+                sourceType: 'profile',
+                screenName: 'ashishnandansin'
+              }}
+              options={{
+                username: 'ashishnandnasin',
+                height: '800'
+              }}
+              onLoad={() => console.log('Timeline is loaded!')}
+            />
+          </div>
+        </div>
       </div>
     )
   }

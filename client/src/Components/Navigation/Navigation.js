@@ -44,6 +44,11 @@ class Navigation extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/twitter">
+                    Twitter Feed
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/contact">
                     Contact
                   </Link>

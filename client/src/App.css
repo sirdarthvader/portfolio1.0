@@ -13,7 +13,7 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: -999;
   background-color: #282c34;
 }
 
@@ -63,4 +63,29 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .skill:hover {
   transform: scale(1.03);
   transition: ease-in-out;
+}
+
+.feedBox {
+  padding: 2em;
+}
+@media only screen and (max-width: 560px) {
+  .feedBox {
+    padding:  0;
+  }
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.bg-buttons {
+  z-index: -1;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
 }
