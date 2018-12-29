@@ -8,6 +8,8 @@ import Projects from "./Components/Pages/Projects";
 import Blog from "./Components/Pages/Blog";
 import Skills from "./Components/Pages/Skills";
 import Contact from "./Components/Pages/Contact";
+import TwitterFeed from './Components/Pages/TwitterFeed';
+
 
 const snowParticle = {
   particles: {
@@ -60,7 +62,6 @@ const snowParticle = {
     },
   },
 };
-let particleOptions = snowParticle;
 
 const starParticles = {
   "particles": {
@@ -81,8 +82,67 @@ const starParticles = {
   }
 };
 
+const bublesParticle = {
+  "particles": {
+      "number": {
+          "value": 160,
+          "density": {
+              "enable": false
+          }
+      },
+      "size": {
+          "value": 10,
+          "random": true
+      },
+      "move": {
+          "direction": "bottom",
+          "out_mode": "out"
+      },
+      "line_linked": {
+          "enable": false
+      }
+  },
+  "interactivity": {
+      "events": {
+          "onclick": {
+              "enable": true,
+              "mode": "remove"
+          }
+      },
+      "modes": {
+          "remove": {
+              "particles_nb": 10
+          }
+      }
+  }
+}
+
+let particleOptions;
+
+switch(this.state.particleOptions) {
+  case 'snow':
+  particleOptions = snowParticle;
+  break;
+
+  case 'star':
+  particleOptions = starParticles;
+  break;
+
+  case 'bubbles':
+  particleOptions = bublesParticle;
+  break;
+
+  default:
+  particleOptions = starParticles;
+}
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state ={
+      particleOptions: ''
+    }
+  }
   render() {
     return (
       <Router>
@@ -95,6 +155,7 @@ class App extends Component {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/twitter" component={TwitterFeed} />
           </div>
         </div>
       </Router>
