@@ -80,7 +80,7 @@ class Projects extends Component {
           <h5 className="card-header">FaceRecognition Webapp</h5>
           <div className="card-body">
             <h5 className="card-title">
-              You can enter the image URL and using AI the application will be able to see if there are any human face present in the given image.
+              You can enter the image URL and using AI, this application will be able to see if there are any human face's present in the given image.
             </h5>
             <p className="card-text">
               Stack: <br />
