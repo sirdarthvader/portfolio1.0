@@ -1,6 +1,5 @@
 .App {
   color: #61dafb;
-
 }
 
 a {
@@ -17,12 +16,14 @@ a {
   background-color: #282c34;
 }
 
-.card, .jumbotron {
-  background-color: rgba(0,0,0, 0.2);
+.card,
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 20px 2px #111;
 }
+
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: rgba(0,0,0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .card-text {
@@ -68,9 +69,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .feedBox {
   padding: 1em 10em;
 }
+
 @media only screen and (max-width: 560px) {
   .feedBox {
-    padding:  0;
+    padding: 0;
   }
   .box {
     display: none !important;
