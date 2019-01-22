@@ -155,10 +155,9 @@ class App extends Component {
       }
     }
 
-    function initializeReactGA () {
-      ReactGA.initialize('UA-132756411-1')
-      ReactGA.pageview('/')
-    }
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    
 
     return (
       <Router>
