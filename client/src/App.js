@@ -10,7 +10,9 @@ import Skills from './Components/Pages/Skills'
 import Contact from './Components/Pages/Contact'
 import TwitterFeed from './Components/Pages/TwitterFeed'
 
+// initialise google analytics
 
+import ReactGA from 'react-ga'
 
 class App extends Component {
   constructor (props) {
@@ -18,16 +20,16 @@ class App extends Component {
     this.state = {
       bgOption: ''
     }
-    this.onclick = this.onclick.bind(this);
+    this.onclick = this.onclick.bind(this)
   }
 
   onclick (e) {
-    e.preventDefault();
-    this.setState({bgOption: e.target.name});
+    e.preventDefault()
+    this.setState({ bgOption: e.target.name })
   }
 
   render () {
-    const {bgOption} = this.state;
+    const { bgOption } = this.state
 
     const snowParticle = {
       particles: {
@@ -80,7 +82,7 @@ class App extends Component {
         }
       }
     }
-    
+
     const starParticle = {
       particles: {
         number: {
@@ -99,7 +101,7 @@ class App extends Component {
         }
       }
     }
-    
+
     const bubbleParticle = {
       particles: {
         number: {
@@ -134,19 +136,30 @@ class App extends Component {
         }
       }
     }
-    
-    let particleOptions;
 
-    if(bgOption === 'star') {
-      particleOptions = <Particles className='background' params={starParticle} />
+    let particleOptions
+
+    if (bgOption === 'star') {
+      particleOptions = (
+        <Particles className='background' params={starParticle} />
+      )
     } else {
-      if(bgOption === 'bubble') {
-        particleOptions = <Particles className='background' params={bubbleParticle} />
+      if (bgOption === 'bubble') {
+        particleOptions = (
+          <Particles className='background' params={bubbleParticle} />
+        )
       } else {
-        particleOptions = <Particles className='background' params={snowParticle} />
+        particleOptions = (
+          <Particles className='background' params={snowParticle} />
+        )
       }
     }
-    
+
+    function initializeReactGA () {
+      ReactGA.initialize('UA-132756411-1')
+      ReactGA.pageview('/')
+    }
+
     return (
       <Router>
         <div className='container'>
@@ -161,13 +174,25 @@ class App extends Component {
             <Route exact path='/twitter' component={TwitterFeed} />
             <div className='bg-buttons'>
               <div className='box'>
-                <button className='btn btn-primary mb-2' name='snow' onClick={this.onclick}>
+                <button
+                  className='btn btn-primary mb-2'
+                  name='snow'
+                  onClick={this.onclick}
+                >
                   Snow
                 </button>
-                <button className='btn btn-primary mb-2' name='star' onClick={this.onclick}>
+                <button
+                  className='btn btn-primary mb-2'
+                  name='star'
+                  onClick={this.onclick}
+                >
                   Star
                 </button>
-                <button className='btn btn-primary mb-2' name='bubble' onClick={this.onclick}>
+                <button
+                  className='btn btn-primary mb-2'
+                  name='bubble'
+                  onClick={this.onclick}
+                >
                   Bubble
                 </button>
               </div>
