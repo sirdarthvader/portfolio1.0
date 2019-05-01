@@ -8,7 +8,7 @@ class Projects extends Component {
           <h5 className="card-header">DevConnector</h5>
           <div className="card-body">
             <h5 className="card-title">
-              Social networking website for developers.
+              Social networking website for developers
             </h5>
             <p className="card-text">
               Stack: <br />
