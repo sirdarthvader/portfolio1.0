@@ -14,7 +14,7 @@ class Contact extends Component {
           />
           <hr style={{ color: "white" }} />
           <h6 className="">
-            Email: <a href="mailto:me@ashishnandan.in">me@ashishnandan.in</a>
+            Email: <a href="mailto:ashishcodes4@gmail.com">ashishcodes4@gmail.com</a>
           </h6>
           <div className="links">
             <div className="github">
@@ -28,7 +28,7 @@ class Contact extends Component {
             </div>
             <div className="linkedin">
               <a
-                href="https://www.linkedin.com/in/ashish-nandan-singh-490987130/"
+                href="https://www.linkedin.com/in/ashish-nandan-singh/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
